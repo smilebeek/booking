@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo">TeleBook</div>
+            <div class="icons">
+                <div class="icon">&#128161;</div>
+                <div class="icon">&#9993;</div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <!-- Updated Search Section -->
+        <!-- Search Form in Main Page (index.html) -->
+        <form action="search-results.html" method="GET">
+            <div class="search-bar">
+                <!-- City Search -->
+                <div class="search-item">
+                    <span class="search-icon">&#128269;</span>
+                    <input id="place" name="place" type="text" placeholder="Enter city" required>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="search-item">
+                    <span class="search-icon">&#128197;</span>
+                    <input id="start-date" name="start-date" type="date" required>
+                    <input id="end-date" name="end-date" type="date" required>
+                </div>
+
+                <!-- Guest Selection -->
+                <div class="search-item">
+                    <span class="search-icon">&#128100;</span>
+                    <select id="adults" name="adults" required>
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                    </select>
+                </div>
+
+                <!-- Search Button -->
+                <button class="search-button" type="submit">Search</button>
+            </div>
+        </form>
+
+
+        <!-- Hotel Card Section -->
+        <div class="winner-section">
+            <h2>Congratulations</h2>
+            <p>The winner is</p>
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <img src="images/logo-telebook.png" alt="Hotel Image">
+                </div>
+                <div class="hotel-info">
+                    <h2>Art Plaza</h2>
+                    <p>Tashkent city, Muqimiy 44A</p>
+                    <div class="rating">
+                        <span>&#9733;</span> 5.0
+                    </div>
+                    <div class="buttons">
+                        <button class="status-btn">Check status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="nav-item">B</div>
+            <div class="nav-item">Rates</div>
+            <div class="nav-item" id="mates">Mates</div>
+            <div class="nav-item" id="profile">Games</div>
+            <div class="nav-item" id="profile">Profile</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

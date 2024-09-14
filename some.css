@@ -1,0 +1,80 @@
+/* Basic styling for the body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #111;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: #0ff;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #0ff;
+}
+
+/* Hero section styling */
+/* Hero section styling */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff;
+}
+
+.hero .hero-image {
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.hero .play-now {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #ff007f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.hero .play-now:hover {
+  background-color: #ff1493;
+}
+
+

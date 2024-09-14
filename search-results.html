@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="search-results.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with Back Button -->
+        <div class="header">
+            <button id="back-button">&#8592;</button> <!-- Back button -->
+            <div id="search-info">Tashkent · Sep 8 - Sep 9</div> <!-- Placeholder for dynamic data -->
+        </div>
+
+        <!-- Hotel Cards -->
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Demure Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                
+                <div class="buttons">
+                    <button class="book-btn" onclick="window.location.href='hotel-details.html'">Book</button>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Atlas Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                <div class="buttons">
+                    <button class="book-btn" onclick="window.location.href='hotel-details.html?name=Art Hotel&location=Tashkent&price=500000'">Book</button>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Art Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                <div class="buttons">
+                    <button class="book-btn">Book</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Art Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                <div class="buttons">
+                    <button class="book-btn">Book</button>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Art Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                <div class="buttons">
+                    <button class="book-btn">Book</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="images/logo-telebook.png" alt="Hotel Image">
+            </div>
+            <div class="hotel-info">
+                <h2>Art Hotel</h2>
+                <p>Somewhere, Someplace</p>
+                <div class="rating">
+                    <span>&#9733;</span> 3.0
+                    <p>Price : UZS 450.000</p>
+                </div>
+                <div class="buttons">
+                    <button class="book-btn">Book</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- More hotel cards can be added dynamically or kept static -->
+    </div>
+
+    <!-- JavaScript to add dynamic functionality -->
+    <script src="result.js"></script>
+</body>
+</html>
+
